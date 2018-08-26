@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas');
+
+/* General Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color:black;
+  font-size:1.6rem;
+  background-color:white;
+}
+
+main {
+  width:80%;
+  max-width:96rem;
+  margin:0 auto;
+}
+
+h1 {
+  margin-top:3rem;
+  font-size:4rem;
+  color:black;
+  font-family: 'Rakkas', cursive;
+  text-align:center;
+}
+
+h2 {
+  width:100%;
+  background-color: navy;
+  padding:0.5rem 1rem;
+  font-size:2rem;
+  color:#eee;
+  font-family: 'Rakkas', cursive;
+}
+
+.centered {
+  text-align:center;
+}
+
+#output {
+  padding:2rem;
+  margin-bottom:2rem;
+  height:50vh;
+  overflow-y:scroll;
+  border:1px solid #333;
+}
+
+#output p {
+  margin-bottom:1rem;
+}
+
+#cmdInput {
+  padding:0.5rem;
+}
+
+#cmdEnterBtn {
+  padding: 0.5rem;
+  background-color:navy;
+  color:#eee;
+  border-radius:.5rem;
+  text-transform: uppercase;
+  border:1px solid #333;
+}
