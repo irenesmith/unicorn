@@ -14,10 +14,13 @@
   </head>
   <main>
     <img id="img">
-    <h2 id="locTitle"></h2>
+    <div id="title-bar">
+      <h2 id="locTitle"></h2>
+      <h2>Moves: <span id="moves">0</span></h2>
+    </div>
     <div id="output"></div>
     <label for="cmdInput">What would you like to do? </label>
-    <input id="cmdInput" type="text">
+    <input id="cmdInput" type="text" autofocus>
     <button id="cmdEnterBtn">Enter</button>
   </main>
 
@@ -26,7 +29,6 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/location.js"></script>
-  <script type="text/javascript" src="js/unicorn.js"></script>
+  <script type = "module" src="js/unicorn.js"></script>
 </body>
 </html>
