@@ -22,8 +22,11 @@ body {
 }
 
 main {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width:80%;
-  max-width:96rem;
+  max-width:85rem;
   margin:0 auto;
 }
 
@@ -49,6 +52,11 @@ h2 {
   padding:0.5rem 1rem;
 }
 
+#input-bar {
+  justify-content: flex-start;
+  width:100%;
+}
+
 .centered {
   text-align:center;
 }
@@ -67,6 +75,7 @@ h2 {
 
 #cmdInput {
   padding:0.5rem;
+  width:250px;
 }
 
 #cmdEnterBtn {

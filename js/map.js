@@ -53,6 +53,11 @@ export function initMap() {
     "title": "Road out of town...",
     "description": "<p>You are standing on a road that leads South into the mountain passes.</p>",
     "exits": {"n":1, "s":0, "e":0, "w":0}
+  },
+  {
+    "id":6,
+    "title": "<p>This is a narrow mountain pass. I would be very quiet if I were you. You never know who might be hanging around.</p>",
+    {"n":5, "s":0, "e":0, "w":0, "u":0, "d":0}
   }
 ];
  */
