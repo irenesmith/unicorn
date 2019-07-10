@@ -21,12 +21,22 @@ $(document).ready(function() {
   isPlaying = true;
 });
 
+$('#cmdInput').keydown(function(event) {
+  if(event.originalEvent.key === 'Enter') {
+    playerInput = $('#cmdInput').val();
+    processCommand(playerInput);
+  }
+});
+
 $('#cmdEnterBtn').click(function() {
   playerInput = $('#cmdInput').val();
+  processCommand(playerInput);
+});
 
+function processCommand(cmd) {
   // If the player just clicked the button
   // without entering anything, return.
-  if(playerInput === '') {
+  if(cmd === '') {
     return;
   }
 
@@ -36,7 +46,7 @@ $('#cmdEnterBtn').click(function() {
   let oldLocation = mapLocation;
   let msg = '';
 
-  [msg, mapLocation] = parseCommand(playerInput, mapLocation);
+  [msg, mapLocation] = parseCommand(cmd, mapLocation);
 
   $('#output').append(msg);
   if((mapLocation.id > 0) && (mapLocation.id != oldLocation.id)) {
@@ -46,7 +56,9 @@ $('#cmdEnterBtn').click(function() {
   if(mapLocation.id === 0) {
     mapLocation = oldLocation;
   }
-});
+
+  $('#cmdInput').val('');
+}
 
 function displayMessage(msg) {
   $('#output').append(msg);
